@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    padding: 0;
+}
+
+.head {
+    text-align: center;
+    padding: 2em 0;
+    background-color: crimson;
+    color: white;
+}
+
+.card {
+    margin: 3rem;
+}
+
+.card-head {
+    background-color: royalblue;
+    color: white;
+    padding: 1rem;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-list {
+    padding: 2rem;
+}
+
