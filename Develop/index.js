@@ -185,10 +185,12 @@ function finishHtml() {
     </body>
     </html>`;
 
-    fs.appendFile("./output/team.html", html, function (err) {
+    fs.appendFile("team.html", html, function (err) {
         if (err) {
             console.log(err);
         };
     });
     console.log("end");
 }
+
+initApp();
