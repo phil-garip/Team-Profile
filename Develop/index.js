@@ -94,8 +94,7 @@ function startHtml() {
             <div class="container-fluid head">
                 <h1>My Team</h1>
             </div>
-        </div>
-        
+            <div class="container-fluid cards">
         `;
     fs.writeFile("team.html", html, function(err) {
         if (err) {
@@ -123,8 +122,8 @@ function addHtml(member) {
                 <div class="container card-body">
                     <ul class="list-group card-list">
                         <li class="list-group-item" id="id">ID: ${id} </li>
-                        <li class="list-group-item" id="id">Email: ${email}  </li>
-                        <li class="list-group-item" id="id">Github: ${gitHub} </li>
+                        <li class="list-group-item" id="id">Email: <a href="mailto:${email}">${email}</a></li>
+                        <li class="list-group-item" id="id">Github: <a href="github.com/${gitHub}">github.com/${gitHub}</a></li>
                     </ul>
                 </div>
             </div>
@@ -140,7 +139,7 @@ function addHtml(member) {
                 <div class="container card-body">
                     <ul class="list-group card-list">
                         <li class="list-group-item" id="id">ID: ${id} </li>
-                        <li class="list-group-item" id="id">Email: ${email}  </li>
+                        <li class="list-group-item" id="id">Email: <a href="mailto:${email}">${email}</a></li>
                         <li class="list-group-item" id="id">School: ${school} </li>
                     </ul>
                 </div>
@@ -157,7 +156,7 @@ function addHtml(member) {
                 <div class="container card-body">
                     <ul class="list-group card-list">
                         <li class="list-group-item" id="id">ID: ${id} </li>
-                        <li class="list-group-item" id="id">Email: ${email}  </li>
+                        <li class="list-group-item" id="id">Email: <a href="mailto:${email}">${email}</a></li>
                         <li class="list-group-item" id="id">Office Number: ${officePhone} </li>
                     </ul>
                 </div>
@@ -181,7 +180,9 @@ function addHtml(member) {
 }
 
 function finishHtml() {
-    const html = ` <script src="../index.js"></script>
+    const html = `</div>
+    </div>
+    <script src="../index.js"></script>
     </body>
     </html>`;
 
