@@ -8,3 +8,8 @@ To run, please run 'node index' in the terminal to be presented with questions a
 You can find all the files in a repo here: https://github.com/phil-garip/Team-Profile
 
 # ScreenShot
+[HTML webpage sample](./images/MyTeamScreenShot.png)
+
+
+# Questions?
+Feel free to contact me at phil.garip@gmail.com with any additional questions or feedback!
